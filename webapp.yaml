@@ -30,7 +30,7 @@ spec:
             secretKeyRef:
               name: mongo-secret
               key: mongo-password
-        - name:
+        - name: DB_URL
           valueFrom:
             configMapKeyRef:
               name: mongo-config
